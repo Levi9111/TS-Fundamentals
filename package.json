@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "ts-node-dev --respawn src/index.ts",
     "lesson-2": "ts-node-dev --respawn src/lesson-2.ts",
+    "lesson-2.2": "ts-node-dev --respawn src/lesson-2.2.ts",
     "build": "tsc",
     "start": "ts-node src/index.ts"
   },

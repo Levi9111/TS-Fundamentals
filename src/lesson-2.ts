@@ -79,3 +79,21 @@ const obj: Record<string, number> = {};
 
 map.set('foo', 1);
 obj['foo'] = 1;
+
+// 💥 Challenge: Group Anagrams
+
+const groupAnagrams = (words: string[]): string[][] => {
+  const map = new Map<string, string[]>();
+
+  for (const word of words) {
+    const sorted = word.split('').sort().join();
+    const group = map.get(sorted) || [];
+
+    group.push(word);
+    map.set(sorted, group);
+  }
+
+  return Array.from(map.values());
+};
+
+console.log(groupAnagrams(['bat', 'tab', 'eat', 'tea', 'tan', 'nat']));
