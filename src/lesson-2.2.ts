@@ -34,4 +34,4 @@ const isPalindromePermutation = (s: string): boolean => {
   return true;
 };
 
-console.log(isPalindromePermutation('Tact Coa'));
+console.log(isPalindromePermutation('Tact Coaso'));
